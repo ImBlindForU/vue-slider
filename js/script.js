@@ -71,16 +71,15 @@ createApp({
                     ],
                     currentSlide : 0,
             }
-        }
-    },
-    
-    methods :  {
+        },
+    methods: {
         slideDown: function() {
             if (this.currentSlide < this.slides.length - 1) {
                 this.currentSlide++;
             } else {
                 this.currentSlide = 0;
             }
+
         },
         slideUp: function() {
             if ( this.currentSlide > 0) {
@@ -88,10 +87,11 @@ createApp({
             } else {
                 this.currentSlide = this.slides.length - 1;
             }
+
         },
         showSlide(clickedSlide) {
             this.currentSlide = clickedSlide;
-        } 
+        },
     },
 }).mount("#app");
 

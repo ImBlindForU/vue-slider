@@ -42,6 +42,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
+            
                 slides: [
                         {
                             image: 'img/01.jpg',
@@ -70,6 +71,7 @@ createApp({
                         }
                     ],
                     currentSlide : 0,
+                    interval: "",
             }
         },
     methods: {
@@ -92,6 +94,7 @@ createApp({
         showSlide(clickedSlide) {
             this.currentSlide = clickedSlide;
         },
+
     },
 }).mount("#app");
 
